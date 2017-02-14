@@ -1,0 +1,8 @@
+<h1>Tasks#edit</h1>
+
+<%= form_for @task do |f| %>
+  <%= f.text_field :name , placeholder: "Your task"%>
+  <%=f.label :done %>
+  <%= f.check_box  :done %>
+  <%= f.submit "Update" %>
+<% end %>

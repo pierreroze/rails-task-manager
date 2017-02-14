@@ -1,0 +1,11 @@
+
+<%= form_for @task do |f| %>
+  <%= f.text_field :name , placeholder: "Your task"%>
+  <%=f.label :done %>
+  <%= f.check_box  :done %>
+  <%= f.submit "Create" %>
+<% end %>
+
+
+
+
